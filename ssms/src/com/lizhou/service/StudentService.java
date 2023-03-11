@@ -29,36 +29,7 @@ public class StudentService {
 		dao = new StudentDaoImpl();
 	}
 	
-	/**
-	 * 修改学生信息
-	 * @param student
-	 */
-	public void editStudent(Student student){
-		
-		String sql = "";
-		
-		List<Object> params = new LinkedList<>();
-		params.add(student.getName());
-		params.add(student.getSex());
-		params.add(student.getPhone());
-		params.add(student.getQq());
-		
-		if(student.getGrade() == null || student.getClazz() == null){
-			sql = "UPDATE student SET name=?, sex=?, phone=?, qq=? WHERE number=?";
-		} else{
-			sql = "UPDATE student SET name=?, sex=?, phone=?, qq=?, clazzid=?, gradeid=? WHERE number=?";
-			params.add(student.getClazzid());
-			params.add(student.getGradeid());
-		}
-		params.add(student.getNumber());
-		
-		//更新学生信息
-		dao.update(sql, params);
-		
-		//修改系统用户名
-		dao.update("UPDATE user SET name=? WHERE account=?", 
-				new Object[]{student.getName(), student.getNumber()});
-	}
+
 	
 	/**
 	 * 删除学生
@@ -99,30 +70,6 @@ public class StudentService {
 		
 	}
 	
-	/**
-	 * 添加学生
-	 * @param student
-	 */
-	public void addStudent(Student student){
-
-		//添加学生记录
-		dao.insert("INSERT INTO student(number, name, sex, phone, qq, clazzid, gradeid) value(?,?,?,?,?,?,?)", 
-				new Object[]{
-					student.getNumber(), 
-					student.getName(), 
-					student.getSex(), 
-					student.getPhone(),
-					student.getQq(),
-					student.getClazzid(),
-					student.getGradeid()
-				});
-		//添加用户记录
-		dao.insert("INSERT INTO user(account, name, type) value(?,?,?)", new Object[]{
-				student.getNumber(),
-				student.getName(),
-				User.USER_STUDENT
-		});
-	}
 	
 	/**
 	 * 分页获取学生
