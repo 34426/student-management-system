@@ -1,4 +1,4 @@
-# 学生成绩管理系统
+# 学生信息管理系统
 
 有问题，或者不会调试运行的同学, 可以添加微信：xzxj0206
 
@@ -7,7 +7,10 @@
 # 项目介绍
 该学生信息管理系统涉及到学生、教师、系统管理员、班级、学生成绩、课程等。
 
-![img_6.png](imgs/img_6.png)
+# 系统运行界面
+
+![img.png](imgs/img.png)
+
 
 ## 一、技术栈
 
@@ -62,18 +65,21 @@
 
 ## 三、学生功能部分页面展示
 
-![img.png](imgs/img.png)
-
 ![img_1.png](imgs/img_1.png)
-
-## 四、教师功能部分页面展示
 
 ![img_2.png](imgs/img_2.png)
 
-![img_3.png](imgs/img_3.png)
 
-## 五、管理员部分功能页面展示
+## 四、教师功能部分页面展示
+
+![img_3.png](imgs/img_3.png)
 
 ![img_4.png](imgs/img_4.png)
 
+
+## 五、管理员部分功能页面展示
+
 ![img_5.png](imgs/img_5.png)
+
+![img_6.png](imgs/img_6.png)
+
