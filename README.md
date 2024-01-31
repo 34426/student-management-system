@@ -1,25 +1,21 @@
 # 学生信息管理系统
 
 
-### 有问题，或者需要协助调试运行项目的, 可以加QQ：2529519551，或者微信 ：xzxj0206 注明项目，“git+项目名称” ，如：“git学生宿舍管理系统”
-
+### 9.9￥ 获取完整源码+sql，需要加Q：3577148218 ,备用Q: 3808981644
+### 有问题，或者需要协助调试运行项目的也可联系
 ### 更多项目： https://github.com/34426?tab=repositories
-
-
 
 # 项目介绍
 该学生信息管理系统涉及到学生、教师、系统管理员、班级、学生成绩、课程等。
-
-# 系统运行界面
-
-![img.png](imgs/img.png)
 
 
 ## 一、技术栈
 
 编程语言：Java+Jsp
 
-技术栈：Servlet+Jsp+Jdbc+EasyUI+jQuery+Ajax+面向接口编程
+运行工具：idea或eclipse 数据库：mysql
+
+技术栈：Servlet+Jsp+Jdbc+EasyUI+jQuery+Ajax
 
 ## 二、项目功能介绍
 
@@ -86,3 +82,5 @@
 
 ![img_6.png](imgs/img_6.png)
 
+### 9.9￥ 获取完整源码+sql，需要加Q：3577148218 ,备用Q: 3808981644
+![img.png](imgs/img.png)
